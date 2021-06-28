@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Livvic:wght@200&family=Quicksand:wght@300&display=swap");
 
+
 .App {
   text-align: center;
   display: flex;
@@ -77,6 +78,40 @@ body {
 }
 .quizButton:hover {
   background-color: #6bbbc4af !important;
+}
+/* weather */
+.weatherBody {
+  margin: auto;
+  width: 75%;
+  border: 3px solid #618685b9;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.445);
+}
+#header {
+  font-size: 35px;
+  font-family: 'Livvic', sans-serif;
+  font-weight: bolder;
+}
+.input {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 20px ;
+  border-radius: 10px;
+  padding: 10px;
+}
+input:focus {
+  outline: none;
+}
+.weatherStats {
+  font-size: 28px;
+  padding: 10px;
+}
+.date {
+  font-size: 20px;
+  padding: 10px;
 }
 
 /* footer */

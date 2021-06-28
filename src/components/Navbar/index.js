@@ -2,7 +2,7 @@ import React from 'react';
 import planeIcon from "../../assets/icon/icon.png";
 
 function Navbar(props) {
-    const navLinks = ['home', 'quiz', 'weather check',];
+    const navLinks = ['home', 'quiz', 'weather',];
     return (
         <nav className="navbar navbar-expand-lg navbar-light shadow-sm">
             <h1 className="header-title px-2 mx-2">

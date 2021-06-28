@@ -6,7 +6,6 @@ import Weather from './components/Weather';
 import Footer from './components/Footer';
 import './App.css';
 
-
 function App() {
   const [currentPage, setCurrentPage] = useState('about');
 
