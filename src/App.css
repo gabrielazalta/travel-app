@@ -1,38 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Livvic:wght@200&display=swap");
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+body {
+  background-color: #d5f4e6;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.planeIcon {
+  position: relative;
+  top: 20px;
+  padding: 8px;
+}
+
+.header-title {
+  font-size: 45px;
+  font-family: 'Delius Swash Caps', cursive;
+  position: relative;
+  top: -45px;
+  text-align: center;
+  margin-bottom: -25px;
+}
+
+.nav-link {
+  font-size: 26px;
+  font-family: 'Livvic', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  padding: 5px;
+  margin: -10px;
+  text-align: center;
+  color: #618685;
+}
+.nav-link:hover {
+  background-color: #fefbd886;
+  border-radius: 20px;
+}
+
+.active {
+  color: #6bbbc4;
+  font-weight: bold;
+  text-decoration: none;
+}
+.intro-text {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 24px;
+  background-color: #fbefcc63;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+/* .fa {
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #e0876a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.fa:hover {
+  background-color: #f9ccac;
+  text-decoration: none;
+  color: #e0876a;
+} */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
