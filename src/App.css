@@ -1,61 +1,104 @@
-@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Livvic:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Livvic:wght@200&family=Quicksand:wght@300&display=swap");
 
 .App {
   text-align: center;
   display: flex;
 }
-
 body {
-  background-color: #d5f4e6;
+  background-color: #d5f4e6 !important;
 }
 
+/* navigation */
 .icon {
   font-size: 24px;
 }
-
 .planeIcon {
-  position: relative;
-  top: 20px;
   padding: 8px;
+  font-size: 90px;
+  position: relative;
+  top: -10px;
 }
-
 .header-title {
   font-size: 45px;
   font-family: 'Delius Swash Caps', cursive;
   position: relative;
-  top: -45px;
-  text-align: center;
-  margin-bottom: -25px;
+  top: 10px;
 }
-
 .nav-link {
   font-size: 26px;
   font-family: 'Livvic', sans-serif;
   list-style: none;
   text-decoration: none;
-  padding: 5px;
-  margin: -10px;
-  text-align: center;
   color: #618685;
 }
 .nav-link:hover {
-  background-color: #fefbd886;
-  border-radius: 20px;
+  color: #80ced6 !important;
+  font-weight: bold !important;
 }
-
 .active {
   color: #6bbbc4;
   font-weight: bold;
   text-decoration: none;
 }
-.intro-text {
-  font-family: 'Tajawal', sans-serif;
-  font-size: 24px;
-  background-color: #fbefcc63;
-  border-radius: 10px;
-  padding: 5px;
+.active:hover {
+  color: #80ced6 !important;
+  font-weight: bold !important;
 }
 
+/* homepage */
+.home {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #618685b9;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.445);
+}
+.welcome {
+  font-size: 32px;
+  font-family: 'Livvic', sans-serif;
+  margin-bottom: 30px;
+}
+.intro {
+  font-size: 26px;
+  font-family: 'Quicksand', sans-serif;
+}
+.quizButton {
+  background-color: #618685b6 !important;
+  color: white !important;
+  border-radius: 12px !important;
+  padding: 8px;
+  font-size: 24px !important;
+  font-family: 'Livvic', sans-serif;
+  font-weight: bold !important;
+  border-color: #618685b6;
+}
+.quizButton:hover {
+  background-color: #6bbbc4af !important;
+}
+
+/* footer */
+.cloudFooter {
+  position: relative;
+  top: 200px;
+}
+.footer {
+  position: relative;
+  top: 140px;
+  text-align: center;
+  font-family: 'Livvic', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+.footerLink {
+  text-decoration: none;
+  color: #618685;
+}
+.footerLink:hover {
+  color: #57bebb;
+}
 
 /* .fa {
   padding: 13px;
