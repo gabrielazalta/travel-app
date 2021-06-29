@@ -17,7 +17,7 @@ body {
   padding: 8px;
   font-size: 90px;
   position: relative;
-  top: -10px;
+  top: -14px;
 }
 .header-title {
   font-size: 45px;
@@ -82,7 +82,7 @@ body {
 /* weather */
 .weatherBody {
   margin: auto;
-  width: 75%;
+  width: 70%;
   border: 3px solid #618685b9;
   border-radius: 10px;
   padding: 25px;
@@ -105,13 +105,35 @@ body {
 input:focus {
   outline: none;
 }
-.weatherStats {
+.city {
   font-size: 28px;
   padding: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 8px;
+}
+.weather {
+  font-size: 28px;
+  padding: 13px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.weatherTitle {
+  font-size: 28px;
+  padding: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-style:normal;
+  color: rgb(87, 85, 85) !important;
 }
 .date {
   font-size: 20px;
   padding: 10px;
+  font-weight: bold;
+  color: gray;
+  margin-top: 5px;
 }
 
 /* footer */

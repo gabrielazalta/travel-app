@@ -7,7 +7,7 @@ const api = {
 };
 
 function Weather() {
-  const dateBuild = (d) => {
+  const date = (d) => {
     let date = String(new window.Date());
     date = date.slice(3, 15);
     return date;
@@ -34,7 +34,7 @@ function Weather() {
         <div className="input">
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="search city..."
             onChange={(e) => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
@@ -43,17 +43,20 @@ function Weather() {
         </div>
         {typeof weather.main != "undefined" ? (
           <div>
-            <div className="weatherStats">
-              <div className="weatherStats">
+            <div className="city">
+              <div>
                 {weather.name}, {weather.sys.country}
               </div>
-              <div className="date"> {dateBuild(new Date())}</div>
+              <div className="date"> {date(new Date())}</div>
             </div>
-            <div className="weatherStats">
-              <div className="temp weatherStats">
-                {Math.round(weather.main.temp)}°C
+            <div className="weather">
+              <div className="temp weather">
+                <i className="weatherTitle" href="">temperature:</i>{Math.round(weather.main.temp)}°C
               </div>
-              <div className="weather weatherStats">{weather.weather[0].main}</div>
+              <div className="temp weather">
+              <i className="weatherTitle" href="">wind speed:</i>{(weather.wind.speed)} mph
+              </div>
+              <div className="weather"><i className="weatherTitle" href="">condition:</i>{weather.weather[0].description}</div>
             </div>
           </div>
         ) : (
