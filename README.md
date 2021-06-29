@@ -18,6 +18,7 @@ This is a web application built with React.js and Jest.js for testing. Created s
 * JavaScript
 * HTML
 * CSS
+* Wather API (OpenWeatherMap)
 
 ## License
 This application is under the [ISC](https://opensource.org/licenses/ISC) license.
