@@ -10,15 +10,16 @@ function App() {
   const [currentPage, setCurrentPage] = useState('about');
 
   const renderPage = () => {
+    console.log(setCurrentPage);
     switch(currentPage) {
       case 'about':
-        return <About />;
+        return <About setCurrentPage={() => {setCurrentPage()}} />;
       case 'quiz':
         return <Quiz />;
       case 'weather':
         return <Weather />;
       default:
-        return <About />
+        return <About setCurrentPage={() => {setCurrentPage()}} />
     }
   }
 

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css'
 

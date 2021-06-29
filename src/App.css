@@ -79,6 +79,92 @@ body {
 .quizButton:hover {
   background-color: #6bbbc4af !important;
 }
+
+/* links */
+.weblinkBody {
+  font-size: 24px !important;
+  font-family: 'Livvic', sans-serif;
+  width: 80%;
+}
+.webLinks {
+  position: relative;
+  left: 18%;
+}
+.introLinks {
+  font-size: 26px;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 40px;
+}
+.fa {
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  text-decoration: none;
+}
+.fa1 {
+  background: #618685;
+  color: white;
+}
+.fa1:hover {
+  background-color: #80ced6;
+  color: #618685;
+}
+.fa2 {
+  background: #87bdd8;
+  color: white;
+}
+.fa2:hover {
+  background-color: #618685;
+  color: #87bdd8;
+}
+.fa3 {
+  background: #80ced6;
+  color: white;
+}
+.fa3:hover {
+  background-color: #87bdd8;
+  color: #80ced6;
+}
+
+/* quiz */
+.quiz-body {
+  margin: auto;
+  width: 75% !important;
+  text-align: center !important;
+}
+.question-count {
+  font-size: 32px;
+  font-family: 'Livvic', sans-serif;
+  padding: 15px;
+}
+.question-text {
+  font-size: 35px;
+  font-family: 'Livvic', sans-serif;
+  padding: 15px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+.answer-section {
+  margin-top: 20px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+.answer-btn {
+  font-size: 23px !important;
+  font-family: 'Livvic', sans-serif;
+  font-weight: bold !important;
+  color:rgb(63, 60, 60) !important;
+  margin: 14px;
+}
+.btn:hover {
+  background-color: #6bbbc4c7 !important;
+}
+
 /* weather */
 .weatherBody {
   margin: auto;
@@ -157,20 +243,7 @@ input:focus {
   color: #57bebb;
 }
 
-/* .fa {
-  padding: 13px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  background: #e0876a;
-  color: white;
-}
 
-.fa:hover {
-  background-color: #f9ccac;
-  text-decoration: none;
-  color: #e0876a;
-} */
 
 
 
