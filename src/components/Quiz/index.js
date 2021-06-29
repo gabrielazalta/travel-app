@@ -13,18 +13,18 @@ import Retake from '../../Pages/retake';
 
 function Quiz() {
 
-  const destinations = [
-    'New Zealand',
-    'Paris',
-    'Machu Picchu',
-    'Tahiti',
-    'London',
-    'Rome',
-    'Tokyo',
-    'Barcelona',
-    'The Grand Canyon',
-    'Sydney'
-  ]
+  // const destinations = [
+  //   'New Zealand',
+  //   'Paris',
+  //   'Machu Picchu',
+  //   'Tahiti',
+  //   'London',
+  //   'Rome',
+  //   'Tokyo',
+  //   'Barcelona',
+  //   'The Grand Canyon',
+  //   'Sydney'
+  // ]
 
 
   const questions = [
@@ -138,7 +138,6 @@ function Quiz() {
     },
 ];
 
-
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState([0,0,0,0,0,0,0,0,0,0]);
 
@@ -153,81 +152,65 @@ function Quiz() {
     setCurrentQuestion(currentQuestion + 1); 
   }
 
-    const renderQuestions = () => (
-        <div className="quiz mt-5 container quiz-body">
-            <p>
-                <div className="row">
-                    <div className="col-12 question-section">
-                        <div className="question-count text-center">
-                            <span>{currentQuestion + 1}</span>/{questions.length}
-                        </div>         
-                        <div className="question-text text-center">{questions[currentQuestion].question}</div>
-                    </div>
-                    <div className="col-12 answer-section">
-                        {questions[currentQuestion].answer.map((answerText, index) =>( 
-                            <button 
-                            style={{ marginLeft: "auto" }}
-                            className="answer-btn btn btn-outline-dark btn-block btn-lg" 
-                            onClick={() =>handleAnswerButtonClick(index)}>{answerText}
-                            </button>
-                        ))}
-                    </div>
-                </div>
-            </p>
+  const renderQuestions = () => (
+    <div className="quiz mt-5 container quiz-body">
+      <p>
+        <div className="row">
+          <div className="col-12 question-section">
+            <div className="question-count text-center">
+                <span>{currentQuestion + 1}</span>/{questions.length}
+            </div>         
+            <div className="question-text text-center">{questions[currentQuestion].question}</div>
+          </div>
+          <div className="col-12 answer-section">
+            {questions[currentQuestion].answer.map((answerText, index) =>( 
+                <button 
+                style={{ marginLeft: "auto" }}
+                className="answer-btn btn btn-outline-dark btn-block btn-lg" 
+                onClick={() =>handleAnswerButtonClick(index)}>{answerText}
+                </button>
+            ))}
+          </div>
         </div>
-    )
+      </p>
+    </div>
+  )
 
-    const cityPages = (pageIndex) => {
-        switch(pageIndex) {
-            case 0: 
-                return <NewZealand />;
-            case 1:
-                return <Paris />;
-            case 2: 
-                return <MaccuPicchu />;
-            case 3:
-                return <Tahiti />;
-            case 4: 
-                return <London />;
-            case 5:
-                return <Rome />;
-            case 6: 
-                return <Tokyo />;
-            case 7:
-                return <Barcelona />;
-            case 8: 
-                return <GrandCanyon />;
-            case 9:
-                return <Sydney />;
-            default:
-                return <Retake />;
-        }
+  const cityPages = (pageIndex) => {
+    switch(pageIndex) {
+      case 0: 
+          return <NewZealand />;
+      case 1:
+          return <Paris />;
+      case 2: 
+          return <MaccuPicchu />;
+      case 3:
+          return <Tahiti />;
+      case 4: 
+          return <London />;
+      case 5:
+          return <Rome />;
+      case 6: 
+          return <Tokyo />;
+      case 7:
+          return <Barcelona />;
+      case 8: 
+          return <GrandCanyon />;
+      case 9:
+          return <Sydney />;
+      default:
+          return <Retake />;
     }
+  }
 
-    if (currentQuestion < 6) {
-      return renderQuestions();
-    } else {
-      const maxScoreIndex = score.reduce((iMax, x, i, arr) => x > arr[iMax] ? i : iMax, 0);
-      console.log(maxScoreIndex)
-      return cityPages(maxScoreIndex);
-    }
+  if (currentQuestion < 6) {
+    return renderQuestions();
+  } else {
+    const maxScoreIndex = score.reduce((iMax, x, i, arr) => x > arr[iMax] ? i : iMax, 0);
+    console.log(maxScoreIndex)
+    return cityPages(maxScoreIndex);
+  }
 
 }
 
 export default Quiz;
-
-// function maxScoreIndex(arr) {
-//   let i;
-//   let max = arr[0];
-//   let index;
-
-//   for (i = 1; i < arr.length; i++) {
-//       if (arr[i] > max)
-//           max = arr[i];
-//           index = i;
-//   }
-//   return index;
-// } 
-
-// console.log(maxScoreIndex(score));
-//         return cityPages(maxScoreIndex(score));
