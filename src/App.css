@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Livvic:wght@200&family=Quicksand:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Livvic:wght@200&family=Quicksand:wght@300&display=swap"); 
 
 .App {
   text-align: center;
@@ -10,6 +9,24 @@ body {
 }
 
 /* navigation */
+.nav-items {
+  list-style-type: none;
+  text-align: right;
+  font-size: 30px;
+  font-family: 'Livvic', sans-serif;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+.nav-item {
+  padding-left: 30px;
+  color: #618685;
+}
+.nav-item:hover {
+  font-weight: bold !important;
+  color: #6bbbc4;
+}
 .icon {
   font-size: 24px;
 }
@@ -21,30 +38,19 @@ body {
 }
 .header-title {
   font-size: 45px;
-  font-family: 'Delius Swash Caps', cursive;
+  font-family: 'Handlee', cursive;
   position: relative;
   top: 10px;
 }
-.nav-link {
-  font-size: 26px;
-  font-family: 'Livvic', sans-serif;
-  list-style: none;
-  text-decoration: none;
-  color: #618685;
-}
-.nav-link:hover {
-  color: #80ced6 !important;
-  font-weight: bold !important;
-}
-.active {
+/* .active {
   color: #6bbbc4;
   font-weight: bold;
   text-decoration: none;
-}
-.active:hover {
+} */
+/* .active:hover {
   color: #80ced6 !important;
   font-weight: bold !important;
-}
+} */
 
 /* homepage */
 .home {
@@ -64,7 +70,8 @@ body {
 }
 .intro {
   font-size: 26px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Livvic', sans-serif !important;
+  font-weight: lighter;
 }
 .quizButton {
   background-color: #618685b6 !important;
@@ -160,9 +167,14 @@ body {
   font-weight: bold !important;
   color:rgb(63, 60, 60) !important;
   margin: 14px;
+  background-color: none !important;
 }
 .btn:hover {
   background-color: #6bbbc4c7 !important;
+}
+.source {
+  font-size: 18px;
+  font-family: 'Livvic', sans-serif;
 }
 
 /* weather */

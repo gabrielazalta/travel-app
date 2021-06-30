@@ -13,20 +13,6 @@ import Retake from '../../Pages/retake';
 
 function Quiz() {
 
-  // const destinations = [
-  //   'New Zealand',
-  //   'Paris',
-  //   'Machu Picchu',
-  //   'Tahiti',
-  //   'London',
-  //   'Rome',
-  //   'Tokyo',
-  //   'Barcelona',
-  //   'The Grand Canyon',
-  //   'Sydney'
-  // ]
-
-
   const questions = [
     {
       question: 'What weather do you prefer?',
@@ -40,7 +26,7 @@ function Quiz() {
       score: [
         //newZeland, paris, maccuPicchu, tahiti, london, rome, tokyo, barcelona, grandCanyon, sydney
         [9, 3, 5, 10, 2, 6, 6, 6, 10, 8],
-        [10, 1, 1, 10, 1, 1, 2, 2, 10, 2],
+        [9, 1, 1, 10, 1, 1, 2, 2, 10, 2],
         [2, 7, 8, 4, 9, 2, 4, 2, 2, 2],
         [8, 5, 1, 8, 2, 7, 7, 4, 9, 7],
         [1, 10, 3, 1, 7, 3, 2, 3, 2, 1]
@@ -57,7 +43,7 @@ function Quiz() {
       ],
       score: [
         //newZeland, paris, maccuPicchu, tahiti, london, rome, tokyo, barcelona, grandCanyon, sydney
-        [10, 2, 1, 9, 2, 2, 2, 6, 1, 8],
+        [9, 2, 1, 9, 2, 2, 2, 6, 1, 8],
         [6, 8, 10, 7, 9, 8, 9, 8, 10, 8],
         [9, 10, 10, 7, 10, 9, 8, 9, 10, 8],
         [9, 7, 2, 9, 9, 8, 8, 10, 1, 8],
@@ -75,7 +61,7 @@ function Quiz() {
       ],
       score: [
         //newZeland, paris, maccuPicchu, tahiti, london, rome, tokyo, barcelona, grandCanyon, sydney
-        [10, 1, 1, 10, 2, 2, 3, 9, 1, 8],
+        [9, 1, 1, 10, 2, 2, 3, 9, 1, 8],
         [3, 10, 10, 2, 10, 10, 7, 10, 8, 8],
         [10, 3, 10, 10, 3, 3, 5, 7, 10, 9],
         [8, 8, 1, 8, 8, 7, 7, 10, 1, 8],
@@ -93,11 +79,11 @@ function Quiz() {
       ],
       score: [
         //newZeland, paris, maccuPicchu, tahiti, london, rome, tokyo, barcelona, grandCanyon, sydney
-        [9, 8, 8, 9, 8, 8, 8, 9, 5, 7],
+        [8, 8, 8, 9, 8, 8, 8, 9, 5, 7],
         [2, 4, 6, 2, 4, 4, 2, 4, 7, 6],
         [4, 10, 1, 4, 10, 8, 9, 8, 2, 7],
         [3, 8, 2, 3, 8, 8, 4, 6, 4, 8],
-        [10, 6, 10, 10, 6, 6, 7, 8, 9, 6]
+        [9, 6, 10, 10, 6, 6, 7, 8, 9, 6]
       ]
     },
     {
@@ -111,9 +97,9 @@ function Quiz() {
       ],
       score: [
         //newZeland, paris, maccuPicchu, tahiti, london, rome, tokyo, barcelona, grandCanyon, sydney
-        [10, 3, 10, 10, 3, 3, 5, 7, 10, 8],
+        [9, 3, 10, 10, 3, 3, 5, 7, 10, 8],
         [1, 10, 1, 1, 4, 1, 9, 1, 1, 3],
-        [10, 1, 1, 10, 2, 2, 3, 9, 1, 7],
+        [9, 1, 1, 10, 2, 2, 3, 9, 1, 7],
         [5, 9, 1, 4, 8, 6, 9, 9, 1, 7],
         [3, 10, 10, 2, 10, 10, 6, 10, 8, 8]
       ]
@@ -130,7 +116,7 @@ function Quiz() {
       score: [
         //newZeland, paris, maccuPicchu, tahiti, london, rome, tokyo, barcelona, grandCanyon, sydney
         [8, 8, 8, 4, 6, 5, 5, 5, 8, 5],
-        [10, 10, 9, 10, 7, 7, 9, 7, 9, 6],
+        [9, 10, 9, 10, 7, 7, 9, 7, 9, 6],
         [8, 8, 8, 8, 8, 8, 8, 8, 8, 7],
         [6, 5, 7, 8, 6, 7, 5, 9, 8, 7],
         [7, 4, 6, 7, 7, 7, 6, 8, 7, 6]
@@ -164,18 +150,17 @@ function Quiz() {
           </div>
           <div className="col-12 answer-section">
             {questions[currentQuestion].answer.map((answerText, index) =>( 
-                <button 
+              <button 
                 style={{ marginLeft: "auto" }}
                 className="answer-btn btn btn-outline-dark btn-block btn-lg" 
                 onClick={() =>handleAnswerButtonClick(index)}>{answerText}
-                </button>
+              </button>
             ))}
           </div>
         </div>
       </p>
     </div>
   )
-
   const cityPages = (pageIndex) => {
     switch(pageIndex) {
       case 0: 

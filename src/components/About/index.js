@@ -1,23 +1,21 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 
-function About({ setCurrentPage, renderPage }) {
-
-  function renderQuiz() {
-    setCurrentPage("quiz");
-    renderPage();
-  }
+function About() {
 
   return (
     <section>
       <div className="home">
         <h2 className="welcome">Welcome to your Next Destination!</h2>
-        <h3 className="intro">Don't know where to travel next? Not to worry, with Next Destination you will get different travel destination recommendations based on your own preferences. Complete our quiz and pack your bags, because your Next Destination trip begins here!</h3>
-        <button 
-          onClick={renderQuiz} 
-          className="mt-3 pt-2 btn btn-light btn-lg btn-block quizButton" 
-          data-testid="button">
-            start quiz!
-        </button>
+        <h4 className="intro">Don't know where to travel next? Not to worry, with Next Destination you will get different travel destination recommendations based on your own preferences. Complete our quiz and pack your bags, because your Next Destination trip begins here!</h4>
+        <Link to="/quiz">
+          <Button 
+            className="mt-3 pt-2 btn btn-light btn-lg btn-block quizButton" 
+            data-testid="button">
+              start quiz!
+          </Button>
+        </Link>
       </div>
       <br></br>
       <br></br>
