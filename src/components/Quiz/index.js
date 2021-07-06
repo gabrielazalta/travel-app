@@ -44,10 +44,10 @@ function Quiz() {
       score: [
         //newZeland, paris, maccuPicchu, tahiti, london, rome, tokyo, barcelona, grandCanyon, sydney
         [9, 2, 1, 9, 2, 2, 2, 6, 1, 8],
-        [6, 8, 10, 7, 9, 8, 9, 8, 10, 8],
-        [9, 10, 10, 7, 10, 9, 8, 9, 10, 8],
+        [6, 7, 10, 7, 9, 8, 9, 8, 10, 8],
+        [9, 9, 10, 7, 10, 9, 8, 9, 10, 8],
         [9, 7, 2, 9, 9, 8, 8, 10, 1, 8],
-        [5, 9, 3, 6, 8, 8, 9, 10, 2, 7]
+        [5, 8, 3, 6, 8, 8, 9, 10, 2, 7]
       ]
     },
     {
@@ -62,9 +62,9 @@ function Quiz() {
       score: [
         //newZeland, paris, maccuPicchu, tahiti, london, rome, tokyo, barcelona, grandCanyon, sydney
         [9, 1, 1, 10, 2, 2, 3, 9, 1, 8],
-        [3, 10, 10, 2, 10, 10, 7, 10, 8, 8],
+        [3, 9, 10, 2, 10, 10, 7, 10, 8, 8],
         [10, 3, 10, 10, 3, 3, 5, 7, 10, 9],
-        [8, 8, 1, 8, 8, 7, 7, 10, 1, 8],
+        [8, 7, 1, 8, 8, 7, 7, 10, 1, 8],
         [9, 3, 8, 8, 4, 4, 6, 9, 10, 9]
       ]
     },
@@ -79,9 +79,9 @@ function Quiz() {
       ],
       score: [
         //newZeland, paris, maccuPicchu, tahiti, london, rome, tokyo, barcelona, grandCanyon, sydney
-        [8, 8, 8, 9, 8, 8, 8, 9, 5, 7],
+        [8, 7, 8, 9, 8, 8, 8, 9, 5, 7],
         [2, 4, 6, 2, 4, 4, 2, 4, 7, 6],
-        [4, 10, 1, 4, 10, 8, 9, 8, 2, 7],
+        [4, 9, 1, 4, 10, 8, 9, 8, 2, 7],
         [3, 8, 2, 3, 8, 8, 4, 6, 4, 8],
         [9, 6, 10, 10, 6, 6, 7, 8, 9, 6]
       ]
@@ -98,10 +98,10 @@ function Quiz() {
       score: [
         //newZeland, paris, maccuPicchu, tahiti, london, rome, tokyo, barcelona, grandCanyon, sydney
         [9, 3, 10, 10, 3, 3, 5, 7, 10, 8],
-        [1, 10, 1, 1, 4, 1, 9, 1, 1, 3],
+        [1, 9, 1, 1, 4, 1, 9, 1, 1, 3],
         [9, 1, 1, 10, 2, 2, 3, 9, 1, 7],
         [5, 9, 1, 4, 8, 6, 9, 9, 1, 7],
-        [3, 10, 10, 2, 10, 10, 6, 10, 8, 8]
+        [3, 8, 10, 2, 10, 10, 6, 10, 8, 8]
       ]
     },
     {
@@ -116,8 +116,8 @@ function Quiz() {
       score: [
         //newZeland, paris, maccuPicchu, tahiti, london, rome, tokyo, barcelona, grandCanyon, sydney
         [8, 8, 8, 4, 6, 5, 5, 5, 8, 5],
-        [9, 10, 9, 10, 7, 7, 9, 7, 9, 6],
-        [8, 8, 8, 8, 8, 8, 8, 8, 8, 7],
+        [9, 8, 9, 10, 7, 7, 9, 7, 9, 6],
+        [8, 7, 8, 8, 8, 8, 8, 8, 8, 7],
         [6, 5, 7, 8, 6, 7, 5, 9, 8, 7],
         [7, 4, 6, 7, 7, 7, 6, 8, 7, 6]
       ],

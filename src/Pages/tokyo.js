@@ -1,4 +1,5 @@
 import React from 'react';
+import image from "../assets/cities/tokyo.jpg";
 
 function Tokyo() {
 
@@ -10,6 +11,10 @@ function Tokyo() {
       <div className="home">
         <h2 className="welcome">Your Next Destination is...</h2>
         <h2 className="welcome">Tokyo!</h2>
+        <div>
+            <img src={image} className="cityImage" style={{ width: "65%" }} alt="cityImage" />
+        </div>
+        <br></br>
         <h3 className="intro">
           "Animated" is perhaps the best word to describe Tokyo. Crazy about its anime, Japan's mega city is constantly buzzing with movement - feet clacking down sidewalks, cars zooming along streets, subway trains humming below ground, ships cruising in and out. And yet bright lights and loud signs beg you to pause, to break your motion for just one second to pray at the altar of consumerism. This is a city that feeds on motion and progress.
         <br></br>

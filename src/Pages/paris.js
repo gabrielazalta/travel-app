@@ -1,5 +1,5 @@
 import React from 'react';
-
+import image from "../assets/cities/paris.jpg";
 function Paris() {
 
   function refreshPage() {
@@ -10,6 +10,10 @@ function Paris() {
       <div className="home">
         <h2 className="welcome">Your Next Destination is...</h2>
         <h2 className="welcome">Paris, France!</h2>
+        <div>
+            <img src={image} className="cityImage" style={{ width: "65%" }} alt="cityImage" />
+        </div>
+        <br></br>
         <h3 className="intro">
           The City of Light draws millions of visitors every year with its unforgettable ambiance. Of course, the divine cuisine and vast art collections deserve some of the credit as well. The gentle River Seine rambles through the city, flanked by stately museums, centuries-old churches, and blocks of Rococo- and Neoclassic-design architecture, further enhanced by cascading trees and glowing streetlamps. Peppering the Seine's cobbled walks and graceful bridges are impossibly chic Parisians, probably on their way to the market, cafe or cinema.
         <br></br>

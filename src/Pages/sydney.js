@@ -1,5 +1,5 @@
 import React from 'react';
-
+import image from "../assets/cities/sydney.jpg";
 function Sydney() {
 
   function refreshPage() {
@@ -10,6 +10,10 @@ function Sydney() {
       <div className="home">
         <h2 className="welcome">Your Next Destination is...</h2>
         <h2 className="welcome">Sydney, Australia!</h2>
+        <div>
+            <img src={image} className="cityImage" style={{ width: "65%" }} alt="cityImage" />
+        </div>
+        <br></br>
         <h3 className="intro">
           Sydney is both a laid-back beachside town and a thriving metropolis that boasts some of the Southern Hemisphere's best surf, landmarks and activities. Whether you're looking to watch a show at the iconic Opera House, take to the waves at Bondi Beach or explore trendy areas like The Rocks and Darling Harbour, Sydney features something for everyone. Even Sydneysiders have an ideal mix of both worlds: Fashion-forward attire and British-style sarcasm combine with a "no worries" attitude and relaxed coastal vibe. It's no wonder this vibrant city down under is a natural choice for first-time Aussie visitors.
         <br></br>

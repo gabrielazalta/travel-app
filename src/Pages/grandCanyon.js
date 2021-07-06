@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
+import image from "../assets/cities/canyon.jpg";
 
 function GrandCanyon() {
 
@@ -12,6 +11,10 @@ function GrandCanyon() {
       <div className="home">
         <h2 className="welcome">Your Next Destination is...</h2>
         <h2 className="welcome">The Grand Canyon!</h2>
+        <div>
+            <img src={image} className="cityImage" style={{ width: "65%" }} alt="cityImage" />
+        </div>
+        <br></br>
         <h3 className="intro">
           "Grand" doesn't begin to do this canyon justice. Measuring approximately 277 river miles in length, up to 18 miles in width and a mile deep, this massive chasm in northern Arizona is truly a natural wonder. For six million years, the Grand Canyon has expanded with the help of the mighty Colorado River, and for centuries, people from all over the globe have traveled to gaze out over its red and orange grandeur. Managed by the National Park Service and officially designated as a UNESCO World Heritage site, the Grand Canyon leaves its approximately 6 million visitors per year awestruck.
         <br></br>

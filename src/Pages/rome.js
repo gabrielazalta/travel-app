@@ -1,5 +1,5 @@
 import React from 'react';
-
+import image from "../assets/cities/rome.jpg";
 function Rome() {
 
   function refreshPage() {
@@ -10,6 +10,10 @@ function Rome() {
       <div className="home">
         <h2 className="welcome">Your Next Destination is...</h2>
         <h2 className="welcome">Rome, Italy!</h2>
+        <div>
+            <img src={image} className="cityImage" style={{ width: "65%" }} alt="cityImage" />
+        </div>
+        <br></br>
         <h3 className="intro">
           Rome, the city of seven hills, enjoyed a mythic beginning. Romulus and Remus - twin brothers who were nursed by a she-wolf and fathered by a war god - reportedly founded the Eternal City. And although historians are a little skeptical about this epic entry into the world, most travelers are absolutely certain that there is something magical about Rome. Whether it's the mystery of nearby Vatican City or the ghosts of the Colosseum, an afternoon caffè on Piazza Navona or a piled-high plate of pasta at a trattoria, Roma is sure to enchant.
         <br></br>

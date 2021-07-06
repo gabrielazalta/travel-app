@@ -1,5 +1,5 @@
 import React from 'react';
-
+import image from "../assets/cities/tahiti.jpg";
 function Tahiti() {
 
   function refreshPage() {
@@ -10,6 +10,10 @@ function Tahiti() {
       <div className="home">
         <h2 className="welcome">Your Next Destination is...</h2>
         <h2 className="welcome">Tahiti, French Polynesia!</h2>
+        <div>
+            <img src={image} className="cityImage" style={{ width: "65%" }} alt="cityImage" />
+        </div>
+        <br></br>
         <h3 className="intro">
           Miles of shoreline, dozens of resorts, French cuisine to die for - Tahiti has all the makings of a honeymoon destination. But beach bums often pass over Tahiti's sands in favor of Bora Bora's ivory shores. Despite its idyllic reputation and accessibility, Tahiti is more of an off-the-beaten-path stop than a romantic getaway. However, that doesn't mean Tahiti should be ignored.
         <br></br>
