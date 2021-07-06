@@ -161,6 +161,8 @@ function Quiz() {
       </p>
     </div>
   )
+
+  //show city page with highest result score
   const cityPages = (pageIndex) => {
     switch(pageIndex) {
       case 0: 
@@ -188,6 +190,7 @@ function Quiz() {
     }
   }
 
+  //after displaying all questions, show result city page
   if (currentQuestion < 6) {
     return renderQuestions();
   } else {
